@@ -1,0 +1,160 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic);
+@import url(https://fonts.googleapis.com/css?family=Inter:100,200,300,regular,500,600,700,800,900);
+*{
+    margin: 0;
+    padding: 0;
+}
+.login-main{
+    width: 100vw;
+    height: 100vh;
+    background: url('../Assets/Background.svg');
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-container{
+    width: 30%;
+    height: 55%;
+    background-color: #fff;
+    border-radius: 15px;
+    font-family: 'Roboto';
+    box-sizing: border-box;
+    padding: 30px 30px;
+}
+
+.login-container form{
+    width: 100%;
+    margin-top: 40px;
+}
+
+.err-msg{
+    width: 100%;
+    font-family: 'Roboto';
+    background-color: #f1aeb5;
+    border: 1px solid #58151c;
+    color: #58151c;
+    box-sizing: border-box;
+    padding: 7px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+}
+.err-msg p {
+    margin: 0;
+    padding: 0;
+}
+
+input{
+    outline: none;
+    display: block;
+    width: 100%;
+    padding: 7px 10px;
+    margin: 20px 0px;
+    box-sizing: border-box;
+    color: #94A4B8;
+    border: 1px solid #94A4B8;
+    border-radius: 5px;
+}
+
+button{
+    width: 100%;
+    background-color:  #2B377E;
+    padding: 7px 0px;
+    box-sizing: border-box;
+    color: #fff;
+    font-family: 'Inter';
+    border-radius: 5px;
+    border: #2B377E;
+    margin-top: 30px;
+    cursor: pointer;
+}
+
+button:hover{
+    transform: translateY(-2px);
+    box-shadow: 0px 0px 5px #000;
+}
+
+p{
+    margin-top: 10px;
+    font-family: 'Roboto';
+    font-size: 15px;
+
+}
+
+a{
+    text-decoration: none;
+    color: #2B377E;
+}
+
+
+
+.home-main{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url('../Assets/Background.svg');
+        background-size: cover;
+}
+.card {
+    width: 17em;
+    height: 22.5em;
+    background: #fff;
+    transition: 1s ease-in-out;
+    clip-path: polygon(30px 0%, 100% 0, 100% calc(100% - 30px), calc(100% - 30px) 100%, 0 100%, 0% 30px);
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.card span {
+    font-weight: bold;
+    color: #000;
+    text-align: center;
+    display: block;
+    font-size: 1em;
+}
+
+.card .info {
+    font-weight: 400;
+    color: #000;
+    display: block;
+    text-align: center;
+    font-size: 0.72em;
+    margin: 1em;
+}
+
+.card .img {
+    width: 4.8em;
+    height: 4.8em;
+    background-image:url('../Assets/profileicon.png');
+    background-size: cover;
+    border-radius: 15px;
+    margin: auto;
+}
+
+
+.card button {
+    padding: 0.8em 1.7em;
+    display: block;
+    margin: auto;
+    border-radius: 25px;
+    border: none;
+    font-weight: bold;
+    background: #ffffff;
+    color: rgb(0, 0, 0);
+    transition: .4s ease-in-out;
+    width: 80%;
+    border: 1px solid red;
+}
+
+.card button:hover {
+    background: red;
+    color: white;
+    cursor: pointer;
+}
